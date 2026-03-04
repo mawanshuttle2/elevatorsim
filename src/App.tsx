@@ -100,8 +100,8 @@ export default function App() {
       className="w-full h-screen bg-black overflow-hidden font-sans selection:bg-blue-500/30 bg-cover bg-center transition-all duration-700"
       style={{
         backgroundImage: state.screen === 'GAME_ACTIVE' 
-          ? 'url(/assets/images/bg-game.jpg)' 
-          : 'url(/assets/images/bg-menu.jpg)'
+          ? 'url(/elevatorsim/assets/images/bg-game.jpg)' 
+          : 'url(/elevatorsim/assets/images/bg-menu.jpg)'
       }}
     >
       <AnimatePresence mode="wait">
