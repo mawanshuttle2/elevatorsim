@@ -79,7 +79,7 @@ export default function GameActive({ state, setState }: Props) {
                   <Zap size={16} /> Infinity
                 </span>
               ) : (
-                Array.from({ length: Math.min(10, hearts) }).map((_, i) => (
+                Array.from({ length: Math.min(5, hearts) }).map((_, i) => (
                   <Heart key={i} size={16} className="text-red-500 fill-red-500" />
                 ))
               )}
