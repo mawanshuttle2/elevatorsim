@@ -1,9 +1,9 @@
 import { LiftModel } from './types';
 
 export const LIFT_MODELS: LiftModel[] = [
-  { id: 1, name: 'Default', speed: 1.0, capacity: 3, doors: 1.5, cost: 0 },
-  { id: 2, name: 'Standard', speed: 1.2, capacity: 4, doors: 1.3, cost: 200 },
-  { id: 3, name: 'Express', speed: 1.4, capacity: 5, doors: 1.1, cost: 400 },
+  { id: 1, name: 'Default', speed: 0.8, capacity: 3, doors: 1.5, cost: 0 },
+  { id: 2, name: 'Standard', speed: 1.0, capacity: 4, doors: 1.3, cost: 200 },
+  { id: 3, name: 'Express', speed: 1.2, capacity: 5, doors: 1.1, cost: 400 },
   { id: 4, name: 'Bullet', speed: 1.6, capacity: 6, doors: 0.9, cost: 600 },
 ];
 
