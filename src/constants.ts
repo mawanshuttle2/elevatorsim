@@ -4,7 +4,7 @@ export const LIFT_MODELS: LiftModel[] = [
   { id: 1, name: 'Default', speed: 0.6, capacity: 3, doors: 1.5, cost: 0 },
   { id: 2, name: 'Standard', speed: 0.8, capacity: 4, doors: 1.3, cost: 50 },
   { id: 3, name: 'Express', speed: 1, capacity: 5, doors: 1.1, cost: 100 },
-  { id: 4, name: 'Bullet', speed: 1.4, capacity: 6, doors: 0.9, cost: 150 },
+  { id: 4, name: 'Bullet', speed: 1.6, capacity: 6, doors: 0.9, cost: 150 },
 ];
 
 export const DIFFICULTY_MULTIPLIERS = {
