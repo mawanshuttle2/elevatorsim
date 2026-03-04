@@ -2,11 +2,11 @@ import { Howl } from 'howler';
 
 // Sound file paths - assuming they are in public/assets/sounds/
 const SOUND_PATHS = {
-  ding: '/assets/sounds/ding.mp3',
-  tap: '/assets/sounds/tap.mp3',
-  bgm1: '/assets/sounds/bgm.mp3',
-  bgm2: '/assets/sounds/bgm2.mp3',
-  bgm3: '/assets/sounds/bgm3.mp3',
+  ding: '/elevatorsim/assets/sounds/ding.mp3',
+  tap: '/elevatorsim/assets/sounds/tap.mp3',
+  bgm1: '/elevatorsim/assets/sounds/bgm.mp3',
+  bgm2: '/elevatorsim/assets/sounds/bgm2.mp3',
+  bgm3: '/elevatorsim/assets/sounds/bgm3.mp3',
 };
 
 let bgms: Howl[] = [];
