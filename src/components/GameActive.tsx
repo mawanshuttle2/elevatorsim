@@ -105,7 +105,7 @@ export default function GameActive({ state, setState }: Props) {
                 <div 
                   key={i} 
                   className="relative w-full flex-1 border-b-4 border-slate-900 flex items-end bg-cover bg-center"
-                  style={{ backgroundImage: `url(/assets/images/floors/floor-${floorNum}.jpg)` }}
+                  style={{ backgroundImage: `url(/elevatorsim/assets/images/floors/floor-${floorNum}.jpg)` }}
                 >
                   {/* Dark overlay to ensure text and game elements remain visible */}
                   <div className="absolute inset-0 bg-slate-950/10" />
