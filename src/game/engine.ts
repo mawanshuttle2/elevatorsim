@@ -11,7 +11,7 @@ export function useGameEngine(state: GlobalState, setState: React.Dispatch<React
   const [gameState, setGameState] = useState({
     score: 0,
     xpEarned: 0,
-    hearts: state.infinityMode ? 999 : 10,
+    hearts: state.infinityMode ? 999 : 4,
     time: 0,
     passengersDelivered: 0,
     passengers: [] as Passenger[],
@@ -40,6 +40,11 @@ export function useGameEngine(state: GlobalState, setState: React.Dispatch<React
 
     setGameState(prev => {
       let { score, xpEarned, hearts, time, passengersDelivered, passengers, lifts } = prev;
+      
+      // Auto-correct hearts if they exceed the limit (e.g. from previous level state or hot reload)
+      if (!state.infinityMode && hearts > 4) {
+        hearts = 4;
+      }
       
       time += deltaTime;
 
