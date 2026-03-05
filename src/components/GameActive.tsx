@@ -56,10 +56,12 @@ export default function GameActive({ state, setState }: Props) {
             </div>
           </div>
           
-          <div className="bg-slate-900/80 backdrop-blur-md border border-slate-700 px-4 py-2 rounded-xl flex items-center gap-2 shadow-lg">
-            <Clock size={16} className="text-slate-400" />
-            <span className="font-mono text-lg font-bold">{formatTime(time)}</span>
-          </div>
+          {state.currentLevel <= 5 && (
+            <div className="bg-slate-900/80 backdrop-blur-md border border-slate-700 px-4 py-2 rounded-xl flex items-center gap-2 shadow-lg">
+              <Clock size={16} className="text-slate-400" />
+              <span className="font-mono text-lg font-bold">{formatTime(time)}</span>
+            </div>
+          )}
         </div>
 
         <div className="flex flex-col items-end gap-2 pointer-events-auto">
@@ -79,17 +81,19 @@ export default function GameActive({ state, setState }: Props) {
                   <Zap size={16} /> Infinity
                 </span>
               ) : (
-                Array.from({ length: Math.min(5, hearts) }).map((_, i) => (
+                Array.from({ length: Math.min(4, hearts) }).map((_, i) => (
                   <Heart key={i} size={16} className="text-red-500 fill-red-500" />
                 ))
               )}
             </div>
           </div>
           
-          <div className="bg-slate-900/80 backdrop-blur-md border border-slate-700 px-4 py-2 rounded-xl flex items-center gap-2 shadow-lg">
-            <span className="text-[10px] text-slate-400 uppercase tracking-widest font-bold">Model</span>
-            <span className="font-bold text-sm">{liftModel.name}</span>
-          </div>
+          {state.currentLevel <= 5 && (
+            <div className="bg-slate-900/80 backdrop-blur-md border border-slate-700 px-4 py-2 rounded-xl flex items-center gap-2 shadow-lg">
+              <span className="text-[10px] text-slate-400 uppercase tracking-widest font-bold">Model</span>
+              <span className="font-bold text-sm">{liftModel.name}</span>
+            </div>
+          )}
         </div>
       </div>
 
